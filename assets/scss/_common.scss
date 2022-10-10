@@ -11,5 +11,45 @@ body {
   display: flex;
   flex-direction: column;
   background: url(../img/background.jpg);
+  background-color: #3a3a3a;
+  background-position: 50% 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-box-align: center;
+  align-items: center;
+}
 
+a {
+  text-decoration: none;
+}
+
+h2 {
+  margin: 10px 0;
+  color: $accent-color;
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+p {
+  color: $base-color;
+  line-height: 1.75;
+}
+
+i {
+  color: #424242;
+}
+
+li {
+  line-height: 1.75;
+}
+
+.wrapper {
+  min-width: $large;
+  padding: 0 $gutter;
+  flex-grow: 1;
 }

@@ -1,0 +1,15 @@
+.container {
+  display: flex;
+  margin-bottom: 50px;
+  padding: $gutter;
+  background: rgba(#ffffff, 0.1);
+  flex-wrap: wrap;
+}
+
+.main {
+  background-color: $light-color;
+
+  p {
+    text-align: justify;
+  }
+}
