@@ -564,7 +564,7 @@ li {
   background: linear-gradient(to bottom, #0f8bbe 0%, #2989d8 50%, #207cca 51%, #0eb7fe 100%);
 }
 
-.menu_btn {
+.menu__btn {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -580,7 +580,7 @@ li {
       -ms-flex-pack: center;
           justify-content: center;
 }
-.menu_btn-row {
+.menu__btn-row {
   position: relative;
   width: 60%;
   height: 2px;
@@ -590,19 +590,19 @@ li {
   transition: all 0.5s;
   background-color: #ffffff;
 }
-.menu_btn.active .menu__btn-row.first-of-type {
+.menu__btn.active .menu__btn-row.first-of-type {
   top: 6px;
   -webkit-transform: rotate(-135deg);
       -ms-transform: rotate(-135deg);
           transform: rotate(-135deg);
 }
-.menu_btn.active .menu__btn-row:last-of-type {
+.menu__btn.active .menu__btn-row:last-of-type {
   top: -6px;
   -webkit-transform: rotate(-225deg);
       -ms-transform: rotate(-225deg);
           transform: rotate(-225deg);
 }
-.menu_btn.active .menu__btn-row:nth-of-type(2) {
+.menu__btn.active .menu__btn-row:nth-of-type(2) {
   opacity: 0;
 }
 
@@ -960,7 +960,7 @@ li {
 }
 
 @media (min-width: 851px) {
-  .menu_btn {
+  .menu__btn {
     display: none;
   }
   .carousel-slide__image {
@@ -990,9 +990,9 @@ li {
     -o-transition: opacity 0.5s;
     transition: opacity 0.5s;
     opacity: 0;
-    border-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.8);
   }
-  .menu_btn {
+  .menu__btn {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
