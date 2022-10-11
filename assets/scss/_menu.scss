@@ -14,25 +14,24 @@
 
   &__list {
     display: flex;
-
     min-height: 40px;
     margin: 0;
     padding: 0;
     list-style: none;
     align-items: center;
 
-    // @media (max-width: $large) {
-    //   position: absolute;
-    //   z-index: -999;
-    //   top: 100%;
-    //   right: $gutter;
-    //   visibility: hidden;
-    //   flex-direction: column;
-    //   width: 100vw;
-    //   transition: opacity 0.5s;
-    //   opacity: 0;
-    //   border-color: rgba(#000000, 0.8);
-    // }
+    @media (max-width: $large) {
+      position: absolute;
+      z-index: -999;
+      top: 100%;
+      right: -$gutter;
+      visibility: hidden;
+      flex-direction: column;
+      width: 100vw;
+      transition: opacity 0.5s;
+      opacity: 0;
+      border-color: rgba(#000000, 0.8);
+    }
 
     &.active {
       z-index: 1;
@@ -84,6 +83,14 @@
   background-color: rgba(#000000, 0.25);
   align-items: center;
   justify-content: center;
+
+  @media (min-width: 851px) {
+    display: none;
+  }
+
+  @media (max-width: $large) {
+    display: flex;
+  }
 
   &-row {
     position: relative;

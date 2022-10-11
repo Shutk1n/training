@@ -9,6 +9,18 @@
 .main {
   background-color: $light-color;
 
+  @media (min-width: 769px) {
+    flex: 1 0 calc(100% - #{$col-size});
+    padding: 0 $gutter+5 $gutter $gutter;
+    order: 3;
+  }
+
+  @media (max-width: $small) {
+    flex: 1 0 100%;
+    padding: $gutter+5;
+    order: 2;
+  }
+
   p {
     text-align: justify;
   }

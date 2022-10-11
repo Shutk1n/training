@@ -9,7 +9,7 @@
       flex: 0 0 60%;
     }
 
-    @media (max-width: small) {
+    @media (max-width: $small) {
       flex: 1 0 100%;
     }
   }

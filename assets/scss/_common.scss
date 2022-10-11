@@ -13,9 +13,6 @@ body {
   background: url(../img/background.jpg);
   background-color: #3a3a3a;
   background-position: 50% 0;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-box-align: center;
   align-items: center;
 }
 
@@ -45,7 +42,7 @@ i {
 }
 
 li {
-  line-height: 1.75;
+  line-height: 1.5;
 }
 
 .wrapper {
