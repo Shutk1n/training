@@ -46,7 +46,7 @@ li {
 }
 
 .wrapper {
-  min-width: $large;
+  max-width: $large;
   padding: 0 $gutter;
   flex-grow: 1;
 }
